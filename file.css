@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;531;900&display=swap");
 body {
   background: #2a2f2c;
+  margin: 0;
 }
 .header {
   display: flex;
   justify-content: space-between;
+  width: 1184px;
+  margin: 0 auto;
   padding-top: 48px;
-}
-.logo {
-  padding-left: 48px;
 }
 a:visited {
   color: #aaaaaa;
@@ -16,29 +16,16 @@ a:visited {
 .__lang {
   font-family: "Inter", sans-serif;
   font-size: 24px;
-  line-height: 23px;
   text-align: right;
   color: #ffffff;
-  padding-top: 30px;
-}
-.ru:hover {
-  text-decoration-line: underline;
-}
-.en:hover {
-  text-decoration-line: underline;
-}
-.ru {
-  padding-right: 18px;
-  text-decoration: none;
-}
-.en {
-  padding-right: 48px;
-  text-decoration: none;
 }
 
 /* LEAD */
-
-.__title_lead {
+.lead {
+  width: 985px;
+  margin: 0 auto;
+}
+.lead__title {
   font-style: normal;
   font-family: "Inter", sans-serif;
   font-weight: 900;
@@ -48,7 +35,7 @@ a:visited {
   padding-top: 48px;
   color: #ffffff;
 }
-.__subtitle_lead {
+.lead__subtitle {
   font-family: "Inter", sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -56,55 +43,53 @@ a:visited {
   padding-top: 48px;
   color: #ffffff;
 }
-.__image_lead {
+.lead__image {
   padding-top: 78px;
-  padding-left: 170px;
 }
-.__caption_lead {
+.lead__caption {
   font-family: "Inter", sans-serif;
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  padding-left: 170px;
   color: #ffffff;
 }
 
 /* INTRO */
 
 .intro {
+  width: 984px;
+  margin: 0 auto;
   padding-top: 80px;
-  padding-left: 165px;
 }
-.__title_intro {
+.intro__title {
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 54px;
   line-height: 59px;
   color: #ffffff;
 }
-.__subtitle_intro {
+.intro__subtitle {
   font-family: "Inter", sans-serif;
   font-size: 24px;
   line-height: 38px;
   padding-top: 45px;
   color: #ffffff;
 }
-.content-row_intro {
+.intro__content-row {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
   line-height: 24px;
   padding-top: 35px;
-  padding-right: 260px;
   color: #ffffff;
 }
-.__text_intro_two {
+.intro__text-two {
   font-size: 10px;
   line-height: 16px;
 }
-.__text_intro_three {
+.intro__text-three {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 13px;
@@ -118,21 +103,23 @@ a:visited {
 
 .photo-grid {
   display: grid;
+  width: 1184px;
   grid-template-rows: 200px 200px 200px;
   grid-template-columns: 300px 300px 300px 200px;
-  padding-left: 70px;
+  margin: 0 auto;
 }
 
 /* PLACES */
 
 .places {
-  padding-left: 170px;
+  width: 984px;
+  margin: 0 auto;
 }
-.places_main {
+.places__main {
   display: flex;
   justify-content: space-between;
 }
-.__title_place {
+.places__title {
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 72px;
@@ -141,32 +128,15 @@ a:visited {
   padding-bottom: 65px;
   color: #ffffff;
 }
-.url {
+
+.__website {
   font-family: "Inter", sans-serif;
   font-size: 12px;
+  position: absolute;
+  bottom: 500px;
   line-height: 20px;
   letter-spacing: 0.2em;
   color: #aaaaaa;
-}
-.__url-heading {
-  padding-top: 170px;
-  padding-right: 612px;
-}
-.__url-heading-two {
-  padding-top: 110px;
-  padding-right: 615px;
-}
-.__url-heading-three {
-  padding-top: 110px;
-  padding-right: 615px;
-}
-.__url-heading-four {
-  padding-top: 167px;
-  padding-right: 608px;
-}
-.__url-heading-five {
-  padding-top: 110px;
-  padding-right: 610px;
 }
 .__url {
   font-family: "Inter", sans-serif;
@@ -179,20 +149,23 @@ a:visited {
   display: flex;
   justify-content: space-between;
 }
-.infa_places {
+.place__infa {
   font-family: "Inter", sans-serif;
   font-size: 18px;
+  position: relative;
   line-height: 30px;
-  padding-right: 205px;
   color: #ffffff;
 }
 
-.__paragraph_one {
+.paragraph-one {
   margin-bottom: 36px;
 }
 
 /*  ADDITIONAL */
-
+.addintional {
+  width: 1184px;
+  margin: 0 auto;
+}
 .content-title {
   font-family: "Inter", sans-serif;
   font-weight: 900;
@@ -215,18 +188,17 @@ a:visited {
   display: flex;
   justify-content: space-between;
   padding-top: 72px;
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 /* VIDEO */
-
-.video-content {
+.video {
+  width: 1184px;
+  margin: 0 auto;
+}
+.content {
   display: flex;
   justify-content: space-between;
   padding-top: 72px;
-  padding-left: 72px;
-  padding-right: 72px;
 }
 .video-one {
   position: relative;
@@ -240,6 +212,7 @@ a:visited {
   right: 90.7%;
   top: 30px;
 }
+
 .duraction {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -275,7 +248,10 @@ a:visited {
 }
 
 /* COMMENTS */
-
+.comments {
+  width: 1184px;
+  margin: 0 auto;
+}
 .__quote {
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -293,21 +269,44 @@ a:visited {
 }
 
 /* COVER */
-
 .cover {
+  position: relative;
+  width: 1184px;
+  margin: 0 auto;
   padding-top: 102px;
-  padding-left: 70px;
 }
-
+.cover__title {
+  position: absolute;
+  left: 130px;
+  top: 380px;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 78px;
+  text-align: center;
+  color: #fffdfd;
+}
+.cover__subtitle {
+  position: absolute;
+  left: 420px;
+  top: 580px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
 /* EMBLEM */
-
+.emblem {
+  width: 1184px;
+  margin: 0 auto;
+}
 .__title {
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 42px;
   line-height: 46px;
   padding-top: 82px;
-  padding-left: 70px;
   color: #ffffff;
 }
 .__city {
@@ -330,18 +329,19 @@ a:visited {
 }
 
 /* BARENTSBURG */
-
+.barentsburg {
+  width: 1184px;
+  margin: 0 auto;
+}
 .__coord {
   font-family: "Inter", sans-serif;
   font-size: 42px;
   line-height: 61px;
   padding-top: 20px;
-  padding-left: 70px;
   color: #ffffff;
 }
 .__map {
   padding-top: 48px;
-  padding-left: 70px;
 }
 .__text {
   display: flex;
@@ -352,19 +352,22 @@ a:visited {
   font-size: 18px;
   line-height: 30px;
   padding-top: 48px;
-  padding-left: 70px;
+
   color: #ffffff;
 }
 .__text_two {
   font-family: "Inter", sans-serif;
   padding-top: 50px;
-  padding-right: 500px;
 }
-.__url-head {
+.url__head {
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.2em;
+  padding-right: 600px;
   color: #aaaaaa;
+}
+.url__{
+line-height: 30px;
 }
 .__link {
   font-size: 18px;
@@ -377,7 +380,9 @@ a:visited {
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 1184px;
+  margin: 0 auto;
   padding-top: 160px;
   padding-bottom: 48px;
 }
@@ -386,7 +391,6 @@ a:visited {
   font-size: 24px;
   line-height: 41px;
   text-decoration: none;
-  width: 10px;
   color: #ffffff;
 }
 .__copyright {
@@ -394,13 +398,6 @@ a:visited {
   font-size: 14px;
   line-height: 20px;
   text-align: right;
-  padding-top: 15px;
-  padding-right: 75px;
+  padding-top: 10px;
   color: #ffffff;
-}
-.maps {
-  padding-left: 48px;
-}
-.travel {
-  padding-right: 300px;
 }
